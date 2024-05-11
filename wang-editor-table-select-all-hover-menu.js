@@ -1,13 +1,13 @@
-const tableSelectAllHoverMenu = {
+const wangEditorTableSelectAllHoverMenu = {
     key: 'selectAll', // 定义 menu key ：要保证唯一、不重复（重要）
     factory() {
-        return new TableSelectAllHoverMenu() // 把 `YourMenuClass` 替换为你菜单的 class
+        return new WangEditorTableSelectAllHoverMenu() // 把 `YourMenuClass` 替换为你菜单的 class
     },
 }
 
 // https://github.com/wangeditor-team/wangEditor/issues/5714
 // 内容编写参考：https://github.com/wangeditor-team/wangEditor/blob/master/packages/table-module/src/module/menu/InsertCol.ts
-function TableSelectAllHoverMenu() {
+function WangEditorTableSelectAllHoverMenu() {
     // 全选菜单渲染为一个按钮
     this.tag = 'button';
     this.title = '全选';
