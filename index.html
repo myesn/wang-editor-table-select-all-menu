@@ -50,6 +50,8 @@
         })
         editor.setHtml(`<table style="width: auto;"><tbody><tr><th colSpan="1" rowSpan="1" width="68">a</th><th colSpan="1" rowSpan="1" width="123">b</th><th colSpan="1" rowSpan="1" width="132">c</th></tr><tr><td colSpan="1" rowSpan="1" width="auto">1</td><td colSpan="1" rowSpan="1" width="auto">2</td><td colSpan="1" rowSpan="1" width="auto">3</td></tr><tr><td colSpan="1" rowSpan="1" width="auto">4</td><td colSpan="1" rowSpan="1" width="auto">5</td><td colSpan="1" rowSpan="1" width="auto">6</td></tr></tbody></table><p><br></p>`);
 
+        // 注册菜单
+        wangEditor.Boot.registerMenu(tableSelectAllHoverMenu);
         // 在 editor 创建后 push，或者通过
         // editor.getConfig().hoverbarKeys.table.menuKeys.push(tableSelectAllHoverMenu.key);
         // 在指定索引位置插入

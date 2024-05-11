@@ -48,5 +48,3 @@ function TableSelectAllHoverMenu() {
         editor.select(selectedTablePath);
     }
 }
-
-wangEditor.Boot.registerMenu(tableSelectAllHoverMenu);
